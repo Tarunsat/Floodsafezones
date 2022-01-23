@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="20dp"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="#dee0dc"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:onClick="Current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toggle current location"
+                android:layout_gravity="center"/>
+            <Button
+                android:onClick="Lastsaved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toggle last saved location"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensor ID"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sensor ID"
+                android:id="@+id/ID"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:id="@+id/Latitude"/>
+            <TextView
+
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude"/>
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/Longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longitude" />
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Radius"/>
+
+            <EditText
+                android:id="@+id/Radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Radius" />
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Level"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Level"
+                android:id="@+id/Level"/>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+
+
+                <Button
+                    android:id="@+id/cancelit"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Submit"
+                    android:gravity="center"
+
+                    android:text="Submit" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
